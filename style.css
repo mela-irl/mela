@@ -1,0 +1,114 @@
+:root {
+  --introduction-color: #555;
+}
+
+html {
+  color: #000;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem
+}
+
+h2 {
+  font-size: 1.5rem
+}
+
+h3 {
+  font-size: 1.25rem
+}
+
+p {
+  font-size: 1rem
+}
+
+/* interesting stuff starts here
+/
+/
+*/
+
+/* Navigation Bar */
+
+nav {
+  position: fixed;
+  z-index: 5;
+  left: -106vw;
+
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  padding-left: 5rem;
+  padding-right: 2rem;
+
+  background: #fff;
+  opacity: 20%;
+
+  outline: 0rem solid black;
+  border-radius: 1rem;
+
+  transition: all 400ms ease-out 40ms;
+}
+
+nav:hover{
+  left: -30vw;
+  opacity: 100%;
+  outline-width: .2rem
+}
+
+
+/* Top of Page */
+
+.header,
+.subheader {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.subheader {
+  background-color: #eee;
+  margin-bottom: .9rem;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+
+
+/* Introduction */
+
+p.intro {
+  color: #fff;
+  font-weight: 400;
+}
+
+div.intro {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 8rem;
+
+  background-color: var(--introduction-color);
+
+  outline: 0.25rem solid var(--introduction-color);
+  outline-offset: 0rem;
+  border-radius: 1rem;
+
+  transition: outline 220ms ease-out, outline-offset 150ms ease-out 75ms, background-color 220ms ease-out;
+}
+
+div.intro:hover {
+  outline: 0.25rem solid #111;
+  outline-offset: 0.2rem;
+  background-color: #111;
+}
+
+
+
+
