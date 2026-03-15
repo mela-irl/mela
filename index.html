@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Web Page</title>
+  <title>mela website</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" >
   <link href="style.css" rel="stylesheet">
 </head>
@@ -13,9 +13,10 @@
   <div class="hover-content">
     <h2>Navigation</h2>
     <ul>
-      <li>HTML (HyperText Markup Language)</li>
-      <li>CSS (Cascading Style Sheets)</li>
-      <li>JS (JavaScript)</li>
+      <li class="youre-here">Home Page (you're here)</li>
+      <li><a href='html.html'>HTML (HyperText Markup Language)</a></li>
+      <li><a href='css.html'>CSS (Cascading Style Sheets)</a></li>
+      <li><a href='js.html'>JS (JavaScript)</a></li>
     </ul>
   </div>
 </nav>
@@ -26,12 +27,45 @@
   <h1 class='title'>Full Stack Development</h1>
 </header>
 <div class='subheader'>
-  <h3>And Everything I Know Up To Now</h3>
+  <h4>Hey im mela (but online) and i do things like make websites now</h4>
 </div>
 
 <!-- introduction -->
 <div class='intro'>
-  <p class='intro'>this paragraph would say stuff i know but i dont know anything</p>
+  <p class='intro'> I know what you're thinking, "...who the hell is mela?" Well, that's not the question I wanted to answer.
+
+I'm learning HTML, CSS, and JS simultaneously whenver I have freetime during school. The problem is that I keep forgetting stuff I need and have to review the docs.
+
+So, I decided to make this website *using* what I know, in order to *save* what I know. Genius, right?
+
+---
+
+There's a navigation bar if you hover over the left-hand side of the screen. From there, you can check my pages on HTML, CSS, and JS.
+
+(If you're on a device other than pc it probably won't work for you, sorry :( I left buttons that work the same way at the bottom of this page, go check them out)
+
+thanks for stopping by
+  </p>
+</div>
+
+
+<!-- Buttons at the bottom of the page-->
+
+
+<div class="button-container">
+
+  <button class='button' type="button" onclick="window.location.href='html.html'">
+      HTML
+  </button>
+
+  <button class='button' type="button" onclick="window.location.href='css.html'">
+    CSS
+  </button>
+
+  <button class='button' type="button" onclick="window.location.href='js.html'">
+      JS
+  </button>
+
 </div>
 
   <script src="script.js"></script>
